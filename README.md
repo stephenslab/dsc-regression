@@ -8,5 +8,16 @@ pip3 install dsc
 ```
 If you run into issues with the installation please find more information on the DSC2 [installation guide](https://stephenslab.github.io/dsc-wiki/installation.html). 
 
+## Running the benchmark
+```
+[GW] dsc -x regression.dsc -j8
+INFO: DSC script exported to regression.html
+INFO: Constructing DSC from regression.dsc ...
+DSC: 100%|██████████████████████████████████████████████████████████████████████| 36/36 [03:53<00:00,  8.34s/it]
+INFO: Building output database dsc_regression.rds ...█████████████████████████████| 3/3 [00:08<00:00,  2.26s/it]
+INFO: DSC complete!
+INFO: Elapsed time 240.166 seconds.
+```
+
 [1] https://github.com/xiangzhu/dscr_en
 [2] https://github.com/mengyin/dscr-example
