@@ -10,13 +10,33 @@ If you run into issues with the installation please find more information on the
 
 ## Running the benchmark
 ```
-[GW] dsc -x regression.dsc -j8
+$ dsc -x regression.dsc -j8
 INFO: DSC script exported to regression.html
 INFO: Constructing DSC from regression.dsc ...
 DSC: 100%|██████████████████████████████████████████████████████████████████████| 36/36 [03:53<00:00,  8.34s/it]
 INFO: Building output database dsc_regression.rds ...█████████████████████████████| 3/3 [00:08<00:00,  2.26s/it]
 INFO: DSC complete!
 INFO: Elapsed time 240.166 seconds.
+$ dsc -a regression.ann 
+INFO: 
++--------------------------------+-------------------------------------------------------+
+|  Tag                           |  No. unique obj.                                      |
++--------------------------------+-------------------------------------------------------+
+|  elastic_net               |  200 methods & 200 scenarios & 200 score  |
+|  elastic_net10fold         |  200 methods & 200 scenarios & 200 score  |
+|  elastic_net10fold_glmnet  |  200 methods & 200 scenarios & 200 score  |
+|  lasso                     |  200 methods & 200 scenarios & 200 score  |
+|  lasso10fold               |  200 methods & 200 scenarios & 200 score  |
+|  lasso10fold_glmnet        |  200 methods & 200 scenarios & 200 score  |
+|  naive_elastic_net         |  200 methods & 200 scenarios & 200 score  |
+|  naive_elastic_net10fold   |  200 methods & 200 scenarios & 200 score  |
+|  ridge10fold               |  200 methods & 200 scenarios & 200 score  |
+|  sim1                      |  450 methods & 50 scenarios & 450 score   |
+|  sim2                      |  450 methods & 50 scenarios & 450 score   |
+|  sim3                      |  450 methods & 50 scenarios & 450 score   |
+|  sim4                      |  450 methods & 50 scenarios & 450 score   |
++--------------------------------+-------------------------------------------------------+
+INFO: Elapsed time 0.339 seconds.
 ```
 
 [1] https://github.com/xiangzhu/dscr_en
