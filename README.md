@@ -16,5 +16,5 @@ INFO: Constructing DSC from regression.dsc ...
 DSC: 100%|████████████████████████████| 36/36 [03:53<00:00,  8.34s/it]
 INFO: Building output database dsc_regression.rds ...
 INFO: DSC complete!
-INFO: Elapsed time 240.166 seconds.
+INFO: Elapsed time 1467.080 seconds.
 ```
