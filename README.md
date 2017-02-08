@@ -13,7 +13,7 @@ If you run into issues with the installation please find more information on the
 [GW] dsc -x regression.dsc -j16
 INFO: DSC script exported to regression.html
 INFO: Constructing DSC from regression.dsc ...
-DSC: 100%|████████████████████████████| 36/36 [03:53<00:00,  8.34s/it]
+DSC: 100%|████████████████████████████| 36/36 [24:16<00:00, 50.17s/it]
 INFO: Building output database dsc_regression.rds ...
 INFO: DSC complete!
 INFO: Elapsed time 1467.080 seconds.
