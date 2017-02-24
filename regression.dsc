@@ -25,7 +25,7 @@ scenarios:
       Nvalid: 50
       design: grouped
       resstd: 15
-    .alias: args = Pack()
+    .alias: args = List()
   return: meta = output$meta, input = output$input
 
 methods:
@@ -37,7 +37,7 @@ methods:
     Mytune: 10 
     exec[3,7,9]:
       Mytune: NULL
-    .alias: args = Pack()
+    .alias: args = List()
   return: output, coefest = output$coefest
 
 score:
