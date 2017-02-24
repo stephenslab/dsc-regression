@@ -10,7 +10,7 @@ If you run into issues with the installation please find more information on the
 
 ## Running the benchmark
 ```
-$ dsc -x regression.dsc -a regression.ann -j8
+$ dsc -x regression.dsc -a regression.ann -j 8
 INFO: DSC script exported to regression.html
 INFO: Constructing DSC from regression.dsc ...
 DSC: 100%|████████████████████████████| 36/36 [24:16<00:00, 50.17s/it]
