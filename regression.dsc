@@ -47,12 +47,11 @@ score:
   params:
     meta: $meta
     input: $output
-  return: prediction_mse = output$predict_mse, estimation_mse = output$estimation_mse
+  return: prediction_mse = output$prediction_mse, estimation_mse = output$estimation_mse
 
 DSC:
   run:
     all: scenarios * methods * score
-    mr_ash: scenarios * methods[10] * score
   output: dsc_regression
   R_libs: glmnet, elasticnet, MASS
   exec_path: src
