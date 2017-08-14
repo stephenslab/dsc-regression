@@ -31,7 +31,9 @@ scenarios:
 methods:
   exec: lasso.cv.wrapper.R, lasso.glmnet.wrapper.R, lasso.wrapper.R, ridge.wrapper.R,
         elasticnet.cv.wrapper.R, elasticnet.glmnet.wrapper.R, elasticnet.wrapper.R,
-        naive.elasticnet.cv.wrapper.R, naive.elasticnet.wrapper.R
+        naive.elasticnet.cv.wrapper.R, naive.elasticnet.wrapper.R, mr-ash.wrapper.R
+  .alias: lasso_cv, lasso_glmnet, lasso, ridge, elasticnet_cv, elasticnet_glmnet, elasticnet,
+         naive_elasticnet_cv, naive_elasticnet, mr_ash
   params:
     input: $input
     Mytune: 10 
@@ -48,7 +50,9 @@ score:
   return: prediction_mse = output$predict_mse, estimation_mse = output$estimation_mse
 
 DSC:
-  run: scenarios * methods * score
+  run:
+    all: scenarios * methods * score
+    mr_ash: scenarios * methods[10] * score
   output: dsc_regression
   R_libs: glmnet, elasticnet, MASS
   exec_path: src
