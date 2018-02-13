@@ -19,3 +19,7 @@ INFO: Building DSC database ...
 INFO: DSC complete!
 INFO: Elapsed time 1432.313 seconds.
 ```
+## Credits
+* Developed by Xiang Zhu, Mingyin Lu, Wei Wang, Peter Carbonetto and Gao Wang
+* Maintained by Gao Wang
+* Supported by Stephens Lab
