@@ -10,10 +10,13 @@ If you run into issues with the installation please find more information on the
 
 ## Running the benchmark
 ```
-$ dsc regression.dsc -c 30
+$ dsc regression.dsc
 INFO: DSC script exported to regression.html
 INFO: Constructing DSC from regression.dsc ...
-DSC: 100%|██████████████████████████| 77/77 [00:42<00:00,  2.91it/s]
-INFO: Building output database dsc_regression.rds ...
+INFO: Building execution graph ...
+INFO: DSC in progress ...
+DSC: 100%|█████████████████████████████| 85/85 [23:44<00:00,  4.36s/it]
+INFO: Building DSC database ...
 INFO: DSC complete!
+INFO: Elapsed time 1432.313 seconds.
 ```
