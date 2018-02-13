@@ -4,6 +4,7 @@
 #
 datamaker = function(args){
 
+  set.seed(args$seed)
   
   #here insert the meat of the function that needs to be defined for each dsc to be done
   #Your function should define the variables meta (a list) and input (a list)
