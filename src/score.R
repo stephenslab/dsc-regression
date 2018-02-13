@@ -7,9 +7,7 @@ score = function(meta, output){
   truevalue = meta$Xtestt %*% meta$mybeta
 
   prediction = output$predict(meta$Xtestt)
-  
   prediction_mse = mean( (truevalue - prediction)^2 )
-  
   estimation_mse = mean( (meta$mybeta - output$coefest)^2 )
 
   return(list(prediction_mse = prediction_mse, estimation_mse = estimation_mse))
