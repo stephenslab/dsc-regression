@@ -10,10 +10,10 @@ sim1: datamaker.R
   $meta: output$meta
   $input: output$input
 
-sim2(sim1): datamaker.R
+sim2(sim1):
   mybeta: (R(rep(0.85, 8)))
 
-sim3(sim1): datamaker.R
+sim3(sim1):
   mybeta: (R(rep(rep(c(0,2), each=10), 2)))
   Ntrain: 100
   Ntestt: 400
@@ -21,7 +21,7 @@ sim3(sim1): datamaker.R
   design: eqlcorr
   resstd: 15
 
-sim4(sim3): datamaker.R
+sim4(sim3):
   mybeta: (R(c(rep(3, 15), rep(0, 25))))
   Ntrain: 50
   Nvalid: 50
