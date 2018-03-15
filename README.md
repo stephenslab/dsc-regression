@@ -1,6 +1,6 @@
-# dsc2-regression
+# dsc-regression
 
-Application of DSC2 framework to a range of regression models.
+Application of DSC framework to a range of regression models.
 
 The first version of this benchmark was adapted from [[1]](https://github.com/xiangzhu/dscr_en) and [[2]](https://github.com/mengyin/dscr-example), both of which are developed under [DSCR](https://github.com/stephens999/dscr) framework. To run this benchmark you need to install the Python (minimum version required is 3.6) program `dsc`:
 
@@ -8,7 +8,7 @@ The first version of this benchmark was adapted from [[1]](https://github.com/xi
 pip install dsc
 ```
 
-If you run into issues with the installation please find more information on the DSC2 [installation guide](https://stephenslab.github.io/dsc-wiki/manual/installation.html). 
+If you run into issues with the installation please find more information on the DSC [installation guide](https://stephenslab.github.io/dsc-wiki/installation.html).
 
 ## Running the benchmark
 
